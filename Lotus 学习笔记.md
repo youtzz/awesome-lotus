@@ -37,4 +37,27 @@ lotus 所有的命令行都在这里定义。
 
 - cmd 目录
 
-main 函数在这里定义。
+lotus 的命令行 main 函数在这里定义。
+
+- chain
+
+  实现与chain的交互功能。主要包含以下子目录：
+
+  - types: 定义Filecoin中的各种数据结构
+
+  - store: 公链存储相关，处理所有的本地链状态，包括链头、消息和状态等
+
+  - state:处理Filecoin的状态树，内部包装了HAMT
+
+  - actors: Filecoin网络内建的各种**actor**定义
+
+  - vm:Filecoin虚拟机，这里实现了调用Filecoin内**actor**的方法的工具
+
+- extern
+
+- miner
+
+  定义产出区块逻辑，与全节点通过api交互
+
+- node
+
