@@ -1,0 +1,1 @@
+daemon、miner、worker之间使用rpc进行通信
